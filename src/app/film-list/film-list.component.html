@@ -1,10 +1,15 @@
 <section>
-    <h2 *ngIf="theater.name">Films Playing at {{theater.name}}</h2>
+    <h2 *ngIf="theater.name">Films Playing at <strong>{{theater.name}}</strong></h2>
 
     <ul>
         <li *ngFor="let film of sessions">
             <a href="https://drafthouse.com/show/{{film.filmSlug}}">
-                {{film.filmName}}
+                <span class="filmName">{{film.filmName}}</span>
+                <span class="cart">
+                    <svg height="24" width="24">
+                        <use xlink:href="assets/cart.svg#cart" />
+                    </svg>
+                </span>
             </a>
         </li>
     </ul>

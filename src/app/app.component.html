@@ -1,4 +1,12 @@
+<header>
+  <img src="assets/arrow.svg" alt="Welcome to" class="arrow" />
+
+  <img src="assets/shield.svg" alt="Alamo Drafthouse Cinema" class="shield" />
+</header>
+
 <main>
+  <h1>Find A Movie</h1>
+
   <theater-list *ngIf="cinemas.length" [cinemas]="cinemas" (updateTheater)="updateActiveTheater($event)"></theater-list>
 
   <film-list *ngIf="activeSessions && activeTheater" [theater]="activeTheater" [sessions]="activeSessions"></film-list>

@@ -1,0 +1,21 @@
+theater-list {
+    ul {
+        display: grid;
+        gap: 15px;
+        grid-template-columns: repeat(2, 1fr);
+        margin: 0;
+        padding: 0;
+
+        @media screen and (min-width: 480px) {
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+
+    li {
+        list-style: none;
+    }
+
+    button {
+        padding: 13px 0;
+    }
+}

@@ -1,1 +1,77 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css?family=Spartan:900&display=swap');
+
+:root {
+    --black: #090909;
+    --orange: #f0b323;
+    --white: #fff;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: "Spartan", Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+body, html {
+    background-color: #e5e5e5;
+    margin: 0;
+    padding: 0;
+}
+
+app-root {
+    display: grid;
+    grid-template-columns: minmax(1rem, auto) minmax(auto, 750px) minmax(1rem, auto);
+    grid-template-rows: auto 130px auto;
+}
+
+h2 {
+    color: rgba(9, 9, 9, 0.6);
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    line-height: 20px;
+    margin: 52px auto 24px;
+    text-transform: uppercase;
+
+    strong {
+        color: var(--black);
+    }
+}
+
+theater-list,
+film-list {
+    display: block;
+    margin: 52px auto 64px;
+    max-width: 560px;
+}
+
+a,
+button {
+    --fillColor: rgba(9, 9, 9, 0.6);
+    background-color: transparent;
+    border-radius: 4px;
+    border: 1px solid var(--black);
+    color: var(--black);
+    cursor: pointer;
+    display: block;
+    font-size: 14px;
+    letter-spacing: .5;
+    line-height: 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    width: 100%;
+
+    &:hover {
+        --fillColor: var(--orange);
+        background-color: var(--black);
+        border-color: var(--black);
+        color: var(--orange);
+    }
+
+    &:disabled {
+        background-color: var(--orange);
+        border-color: var(--orange);
+        cursor: auto;
+    }
+}
+
+@import './app/theater-list/theater-list.component';
+@import './app/film-list/film-list.component';

@@ -1,0 +1,28 @@
+film-list {
+    ul {
+        margin: 0;
+        padding: 0;
+    }
+
+    li {
+        list-style: none;
+        margin: 1rem auto;
+    }
+
+    a {
+        align-items: start;
+        display: flex;
+        font-size: 18px;
+        letter-spacing: 1px;
+        padding: 15px 24px;
+
+        .filmName {
+            flex-grow: 1;
+            line-height: 24px;
+        }
+
+        span {
+            display: flex;
+        }
+    }
+}

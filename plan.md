@@ -24,6 +24,10 @@ Typically, I default to the latest version of a specific framework to build some
 
 ## Stuff I want to do, but probably won't because of time limits
 
-[ ] Code coverage
+[ ] code coverage
 [ ] PWA for data caching and offline access
-[ ] tests for main Application component
+[ ] tests for main application component
+[ ] skeleton loading
+[ ] optimize images (manually or setup automatic optimization)
+[ ] search
+[ ] server-side rendering

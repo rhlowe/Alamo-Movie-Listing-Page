@@ -1,0 +1,42 @@
+header {
+    background: linear-gradient(159.41deg, #FF009D 3.42%, #F5B324 96.5%);
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+    grid-column: 1 / 4;
+    grid-row: 1 / 3;
+    z-index: 1;
+
+    img {
+        display: block;
+        margin: auto;
+    }
+
+    .arrow {
+        max-width: 260px;
+        width: 40%;
+    }
+
+    .shield {
+        max-width: 100%;
+        margin: 0 auto 150px;
+    }
+}
+
+main {
+    background: var(--white);
+    border-radius: 4px;
+    box-shadow: 0px 1px 5px rgba(24, 17, 3, 0.2), 0px 3px 4px rgba(0, 0, 0, 0.12), 0px 2px 4px rgba(24, 17, 3, 0.14);
+    grid-column: 2 / 3;
+    grid-row: 2 / 4;
+    padding: 0 1rem;
+    margin-bottom: 50px;
+    z-index: 2;
+}
+
+h1 {
+    font-size: 22px;
+    letter-spacing: 1.5px;
+    line-height: 30px;
+    margin: 32px auto 52px;
+    text-align: center;
+    text-transform: uppercase;
+}
