@@ -24,6 +24,7 @@ Typically, I default to the latest version of a specific framework to build some
 
 ## Stuff I want to do, but probably won't because of time limits
 
+[ ] switch to an angular service for data fetching
 [ ] code coverage
 [ ] PWA for data caching and offline access
 [ ] tests for main application component
