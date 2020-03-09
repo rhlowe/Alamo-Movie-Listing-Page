@@ -1,1 +1,11 @@
-<p>film-list works!</p>
+<section>
+    <h2 *ngIf="theater.name">Films Playing at {{theater.name}}</h2>
+
+    <ul>
+        <li *ngFor="let film of sessions">
+            <a href="https://drafthouse.com/show/{{film.filmSlug}}">
+                {{film.filmName}}
+            </a>
+        </li>
+    </ul>
+</section>

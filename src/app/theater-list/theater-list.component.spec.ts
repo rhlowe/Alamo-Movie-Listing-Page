@@ -58,7 +58,7 @@ describe('TheaterListComponent', () => {
     theaterListElement = fixture.nativeElement;
   });
 
-  it('should create', () => {
+  it('should render TheaterListComponent', () => {
     const h2 = theaterListElement.querySelector('h2');
     expect(h2.textContent.toLocaleLowerCase()).toEqual('select theater');
   });

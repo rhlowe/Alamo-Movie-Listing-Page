@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'film-list',
@@ -6,6 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./film-list.component.scss']
 })
 export class FilmListComponent implements OnInit {
+  @Input() theater;
+  @Input() sessions;
 
   constructor() { }
 

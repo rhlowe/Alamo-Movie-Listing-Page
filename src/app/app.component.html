@@ -1,7 +1,5 @@
 <main>
   <theater-list *ngIf="cinemas.length" [cinemas]="cinemas" (updateTheater)="updateActiveTheater($event)"></theater-list>
 
-  <p *ngIf="activeTheater">{{activeTheater}}</p>
-
-  <film-list></film-list>
+  <film-list *ngIf="activeSessions && activeTheater" [theater]="activeTheater" [sessions]="activeSessions"></film-list>
 </main>
