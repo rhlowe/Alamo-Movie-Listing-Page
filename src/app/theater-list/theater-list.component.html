@@ -1,13 +1,1 @@
-<section>
-    <h2>Select Theater</h2>
-
-    <form (submit)="handleSubmit($event)">
-        <ul>
-            <li *ngFor="let cinema of cinemas">
-                <button (click)="selectTheater(cinema.slug)" [disabled]="activeTheater === cinema.slug" class="theater">
-                    {{cinema.name}}
-                </button>
-            </li>
-        </ul>
-    </form>
-</section>
+<p>theater-list works!</p>

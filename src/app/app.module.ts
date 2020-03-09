@@ -9,8 +9,8 @@ import { TheaterListComponent } from './theater-list/theater-list.component';
 @NgModule({
   declarations: [
     AppComponent,
-    FilmListComponent,
     TheaterListComponent,
+    FilmListComponent,
   ],
   imports: [
     BrowserModule,
