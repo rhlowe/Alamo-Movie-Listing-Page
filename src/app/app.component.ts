@@ -40,8 +40,6 @@ export class AppComponent {
 
   filterTheaters(slug) {
     const filteredTheater = (this.cinemas.filter(cinema => cinema.slug === slug))[0];
-
-    console.debug('filterTheaters', slug, filteredTheater);
     return filteredTheater;
   }
 
@@ -49,7 +47,6 @@ export class AppComponent {
     const filteredTheater = (this.cinemas.filter(cinema => cinema.slug === slug))[0];
     // const filteredSessions = this.sessions.filter(film => (film.cinemaId === filteredTheater.id));
     const filteredSessions = this.sessions.reduce((filmsAccumulator, currentFilm) => {
-      console.debug({filmsAccumulator, currentFilm});
       if(filmsAccumulator.filmSlugs.includes(currentFilm.filmSlug)) {
         return filmsAccumulator;
       }
@@ -70,7 +67,6 @@ export class AppComponent {
       return filmsAccumulator;
     }, { films: [], filmSlugs: []});
 
-    // console.debug('filterSessions', slug, filteredSessions);
     return filteredSessions.films.sort((a, b) => {
       if (a.filmSlug > b.filmSlug) {
         return 1;

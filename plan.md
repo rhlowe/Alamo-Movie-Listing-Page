@@ -31,3 +31,5 @@ Typically, I default to the latest version of a specific framework to build some
 [ ] optimize images (manually or setup automatic optimization)
 [ ] search
 [ ] server-side rendering
+[ ] confirm everything lints correctly
+[ ] error handling
