@@ -7,8 +7,8 @@ Basic structure of the app will look something like this.
 
 ## App
 
-App Root
--> Theater-List (component)
+App Root  
+-> Theater-List (component)  
 -> Film-List (component)
 
 ## Data
